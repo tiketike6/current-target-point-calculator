@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="color-scheme" content="light dark" />
+        <link href="stylesheet.css" rel="stylesheet" />
+        <title>今の目標pt計算機</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>日時</td>
+                <td>:</td>
+                <td>
+                    <input type="datetime-local" id="datetime-start" />
+                    ～
+                    <input type="datetime-local" id="datetime-end" />
+                </td>
+            </tr>
+            <tr>
+                <td>最終目標pt</td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="target-end" />
+                </td>
+            </tr>
+            <tr>
+                <td id="label-today">今日の目標pt</td>
+                <td>:</td>
+                <td id="target-today"></td>
+            </tr>
+            <tr>
+                <td id="label-now">現在の目標pt</td>
+                <td>:</td>
+                <td id="target-now"></td>
+            </tr>
+        </table>
+        <div>
+            <input type="button" id="save" value="保存" />
+            <label for="auto-save"><input type="checkbox" id="auto-save" />自動保存</label>
+        </div>
+        <div>保存日時 : <span id="datetime-save">未保存</span></div>
+        <div>
+            <input type="button" id="clear-input" value="入力を初期化" />
+            <input type="button" id="load-save" value="保存した値を読込" />
+            <input type="button" id="clear-save" value="保存した値を削除" />
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"
+            integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/locale/ja.min.js"
+            integrity="sha512-Wnlqvn3V+CPGlJmU+hUsxrDp3S4KKIF7eqlYbPOtAipIOQRHTjk1oZuXvRfaFOZhGmw6leo/V5SqES583KTUDg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
