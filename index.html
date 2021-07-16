@@ -3,13 +3,14 @@
     <head>
         <meta charset="utf-8" />
         <meta name="color-scheme" content="light dark" />
+        <meta name="viewport" content="width=device-width" />
         <link href="stylesheet.css" rel="stylesheet" />
         <title>今の目標pt計算機</title>
     </head>
     <body>
         <table>
             <tr>
-                <td>日時</td>
+                <td class="nowrap">日時</td>
                 <td>:</td>
                 <td>
                     <input type="datetime-local" id="datetime-start" />
@@ -18,32 +19,32 @@
                 </td>
             </tr>
             <tr>
-                <td>最終目標pt</td>
+                <td class="nowrap">最終目標pt</td>
                 <td>:</td>
                 <td>
                     <input type="number" id="target-end" />
                 </td>
             </tr>
             <tr>
-                <td id="label-today">今日の目標pt</td>
+                <td class="nowrap" id="label-today">今日の目標pt</td>
                 <td>:</td>
                 <td id="target-today"></td>
             </tr>
             <tr>
-                <td id="label-now">現在の目標pt</td>
+                <td class="nowrap" id="label-now">現在の目標pt</td>
                 <td>:</td>
                 <td id="target-now"></td>
             </tr>
         </table>
         <div>
-            <input type="button" id="save" value="保存" />
+            <button id="save">保存</button>
             <label for="auto-save"><input type="checkbox" id="auto-save" />自動保存</label>
         </div>
         <div>保存日時 : <span id="datetime-save">未保存</span></div>
         <div>
-            <input type="button" id="clear-input" value="入力を初期化" />
-            <input type="button" id="load-save" value="保存した値を読込" />
-            <input type="button" id="clear-save" value="保存した値を削除" />
+            <button id="clear-input">入力を初期化</button>
+            <button id="load-save">保存した値を読込</button>
+            <button id="clear-save">保存した値を削除</button>
         </div>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"

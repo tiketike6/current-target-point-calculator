@@ -1,8 +1,10 @@
-body {
+* {
     font-family: 'メイリオ', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
     font-size: 14px;
 }
-
 div {
     padding: 4px 0;
+}
+.nowrap {
+    white-space: nowrap;
 }
