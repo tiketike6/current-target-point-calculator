@@ -37,14 +37,15 @@
             </tr>
         </table>
         <div>
+            <button id="update">更新</button>
             <button id="save">保存</button>
             <label for="auto-save"><input type="checkbox" id="auto-save" />自動保存</label>
         </div>
         <div>保存日時 : <span id="datetime-save">未保存</span></div>
         <div>
             <button id="clear-input">入力を初期化</button>
-            <button id="load-save">保存した値を読込</button>
-            <button id="clear-save">保存した値を削除</button>
+            <button id="load-save" disabled>保存した値を読込</button>
+            <button id="clear-save" disabled>保存した値を削除</button>
         </div>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
